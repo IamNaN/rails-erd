@@ -15,6 +15,7 @@ group :development do
   gem 'mocha'
   gem "rake"
   gem "yard"
+  gem "ostruct"
 
   platforms :ruby do
     gem "activerecord", "< 7.0"
