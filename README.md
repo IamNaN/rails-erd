@@ -34,7 +34,7 @@ See the [installation instructions](https://voormedia.github.io/rails-erd/instal
 
 * on linux - `sudo apt-get install graphviz`
 
-* Add <tt>gem 'rails-erd', group: :development</tt> to your application's Gemfile
+* Add <tt>"gem rails-erd", github: "IamNaN/rails-erd", group: :development</tt> to your application's Gemfile
 
 * Run <tt>bundle exec erd</tt>
 
