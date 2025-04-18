@@ -130,11 +130,26 @@ module RailsERD
     def rails_models
       %w(
         ActionMailbox::InboundEmail
+        ActionText::EncryptedRichText
+        ActionText::RichText
         ActiveStorage::Attachment
         ActiveStorage::Blob
         ActiveStorage::VariantRecord
-        ActionText::RichText
-        ActionText::EncryptedRichText
+        SolidCable::Message
+        SolidCache::Entry
+        SolidQueue::BlockedExecution
+        SolidQueue::ClaimedExecution
+        SolidQueue::Execution
+        SolidQueue::FailedExecution
+        SolidQueue::Job
+        SolidQueue::Message
+        SolidQueue::Pause
+        SolidQueue::Process
+        SolidQueue::ReadyExecution
+        SolidQueue::RecurringExecution
+        SolidQueue::RecurringTask
+        SolidQueue::ScheduledExecution
+        SolidQueue::Semaphore
       ).map{ |model| Object.const_get(model) rescue nil }.compact
     end
 
