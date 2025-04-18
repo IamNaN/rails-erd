@@ -3,6 +3,7 @@ require "bundler/setup"
 require 'pry'
 require 'pry-nav'
 
+require "logger"
 require "active_record"
 
 require "minitest/autorun"

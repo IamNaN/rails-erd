@@ -13,8 +13,15 @@ end
 
 group :development do
   gem 'mocha'
+  gem "logger" # is a bundled gem since Ruby 3.4
+  gem "mutex_m" # is a bundled gem since Ruby 3.4
+  gem "base64" # is a bundled gem since Ruby 3.4
+  gem "bigdecimal" # is a bundled gem since Ruby 3.4
+  gem "drb" # is a bundled gem since Ruby 3.4
+  gem "benchmark" # is a bundled gem since Ruby 3.4
   gem "rake"
   gem "yard"
+  gem "ostruct"
 
   platforms :ruby do
     gem "activerecord", "< 7.0"
