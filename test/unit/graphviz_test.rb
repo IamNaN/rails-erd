@@ -193,7 +193,7 @@ class GraphvizTest < ActiveSupport::TestCase
 
   test "generate should add set value for fontname attribute" do
     create_simple_domain
-    assert_equal '"Arial BoldMT"', diagram(fonts: {bold: "Arial Bold"}).graph.graph[:fontname].to_s
+    assert_equal '"Arial Bold"', diagram(fonts: {bold: "Arial Bold"}).graph.graph[:fontname].to_s
   end
 
   test "generate should add default value for splines attribute" do
