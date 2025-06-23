@@ -75,6 +75,8 @@ fonts:
 Auto generation
 ---------------
 
+NOTE: Do not use the <tt>require: false</tt> option in your gem file if you use this feature.
+
 * Run <tt>bundle exec rails g erd:install</tt>
 * Run <tt>bundle exec rails db:migrate</tt>, then the diagram is generated
 
